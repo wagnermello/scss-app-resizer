@@ -4,6 +4,8 @@
 
 <img src="./example-with-reactjs-app/src/assets/readme.gif">
 
+<p>Check it on my website: https://wagnermello.com/scss-app-resizer/</p>
+
 #
 
 <h2> App Wrapper </h2>
