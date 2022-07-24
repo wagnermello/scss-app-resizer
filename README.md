@@ -2,6 +2,8 @@
 
 <h3>Resizing your app with precision</h2>
 
+<img src="./example-with-reactjs-app/src/assets/readme.gif">
+
 #
 
 <h2> App Wrapper </h2>
