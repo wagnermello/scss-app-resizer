@@ -2,9 +2,57 @@
 /*Large screens gap resizer*/
 /*If you want to resize for small screens, just add the media queries that you want*/
 
+.gap__y16 {
+	/*----------Change this value if you want----------*/
+	$gapY: 16px;
+	/*------------------------------------------------------*/
+
+	gap: $gapY 0;
+
+	@media screen and (min-width: 1920px) {
+		gap: ($gapY * 1.4) 0;
+	}
+
+	@media screen and (min-width: 2560px) {
+		gap: ($gapY * 1.875) 0;
+	}
+
+	@media screen and (min-width: 3680px) {
+		gap: ($gapY * 2.7) 0;
+	}
+
+	@media screen and (min-width: 4840px) {
+		gap: ($gapY * 3.4) 0;
+	}
+}
+
 .gap__y32 {
 	/*----------Change this value if you want----------*/
 	$gapY: 32px;
+	/*------------------------------------------------------*/
+
+	gap: $gapY 0;
+
+	@media screen and (min-width: 1920px) {
+		gap: ($gapY * 1.4) 0;
+	}
+
+	@media screen and (min-width: 2560px) {
+		gap: ($gapY * 1.875) 0;
+	}
+
+	@media screen and (min-width: 3680px) {
+		gap: ($gapY * 2.7) 0;
+	}
+
+	@media screen and (min-width: 4840px) {
+		gap: ($gapY * 3.4) 0;
+	}
+}
+
+.gap__y64 {
+	/*----------Change this value if you want----------*/
+	$gapY: 64px;
 	/*------------------------------------------------------*/
 
 	gap: $gapY 0;

@@ -1,0 +1,51 @@
+@import "./styles/app-button-size.scss";
+@import "./styles/app-flex.scss";
+@import "./styles/app-font-size.scss";
+@import "./styles/app-gap.scss";
+@import "./styles/app-wrapper.scss";
+@import "./styles/colors.scss";
+@import "./styles/reset.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,400&display=swap");
+
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+
+body {
+	background-color: #fff;
+	font-family: "Work Sans", sans-serif;
+}
+
+h1 {
+	color: $black-color;
+	font-weight: $bold;
+}
+
+h2 {
+	color: $pink-color;
+	font-weight: $bold;
+}
+
+p {
+	color: $gray-color;
+	font-weight: $regular;
+}
+
+.button-pink {
+	background-color: $pink-color;
+	color: $white-color;
+	text-transform: uppercase;
+	font-weight: $semibold;
+	box-shadow: 4px 4px 4px rgb(00, 00, 00, 0.08);
+	cursor: pointer;
+}
+
+.button-white {
+	background-color: $white-color;
+	color: $pink-color;
+	text-transform: uppercase;
+	font-weight: $semibold;
+	box-shadow: 4px 4px 4px rgb(00, 00, 00, 0.08);
+	cursor: pointer;
+}

@@ -1,0 +1,25 @@
+/*----------List of media query devices size in pixels----------*/
+
+/*----------SMALL DEVICES----------*/
+360 x 640
+880 x 496
+1080 x 608
+1280 x 720
+
+
+/*----------MEDIUM DEVICES----------*/
+1366 x 768 
+1440 x 808
+1680 x 944 
+
+
+/*----------LARGE DEVICES----------*/
+1920 x 1080 (everything should be 1.4x bigger on this size)
+2560 x 1440 (everything should be 1.875x bigger on this size)
+
+
+/*----------EXTRA LARGE DEVICES (4K)----------*/
+3840 x 2160 (everything should be 2.7x bigger on this size)
+
+
+

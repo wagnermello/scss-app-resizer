@@ -1,0 +1,41 @@
+@import "../../styles/colors";
+
+.container2 {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(rgba(117, 48, 88, 0.9), rgba(7, 3, 28, 0.9)),
+		url("../../assets/bg.jpg");
+
+	h1 {
+		color: $white-color;
+	}
+
+	h2 {
+		color: $pink-color2;
+	}
+
+	p {
+		color: $white-color;
+	}
+
+	.container2__text-container {
+		width: 100%;
+		@media screen and (max-width: 880px) {
+			width: 100%;
+			align-items: center;
+		}
+
+		div {
+			width: 100vw;
+			@media screen and (max-width: 880px) {
+				width: 100%;
+				align-items: center;
+			}
+		}
+		a {
+			@media screen and (max-width: 880px) {
+				width: 100%;
+			}
+		}
+	}
+}
