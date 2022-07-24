@@ -19,13 +19,12 @@ How to apply:<br />
 ```
 <section className="app__wrapper">
 	<div className="container__wrapper">
-    	<tag>/*Your section content*/</tag>
+    		/*Your section content*/
 	</div>
 </section>
 ```
 
-#
-
+	
 <h2> App Flex </h2>
 <h4> filename: _app-flex.scss</h4>
 
@@ -38,26 +37,26 @@ How to apply (horizontal center alignment example):<br />
 ```
 <div className="flex__row__center>
 	<div className="flex__column__end">
-			<tag></*Div content right aligned*/</tag>
+		/*Div content right aligned*/
 	</div>
 	<div className="flex__column__center">
-			<tag>/*Div content center aligned*/</tag>
+		/*Div content center aligned*/
 	</div>
 	<div className="flex__column__start">
-			<tag>/*Div content left aligned*/</tag>
+		/*Div content left aligned*/
 	</div>
 </div>
 ```
 
-#
+
 
 <h2> App Gap </h2>
 <h4> filename: _app-gap.scss</h4>
 
 <p> App Gap adds spacing between div children and scale perfectly on large screens.<br />
 
-lassname: gap**x: add horizontal spacing between elements.<br />
-lassname: gap**y: add vertical spacing between elements.<br />
+.gap__x: add horizontal spacing between elements.<br />
+.gap__y: add vertical spacing between elements.<br /
 
 How to apply (vertical gap - 32px): <br />
 
@@ -71,7 +70,7 @@ How to apply (vertical gap - 32px): <br />
 </div>
 ```
 
-#
+
 
 <h2> App Font Size </h2>
 <h4> filename: _app-font-size.scss</h4>
@@ -82,7 +81,7 @@ In this setup, the "p" tag and "h1" tag are scaling.
 But you can setup it on every classes/tags that contain texts.
 </p>
 
-#
+
 
 <h2> App Button Size </h2>
 <h4> filename: _app-button-size.scss</h4>
@@ -91,7 +90,7 @@ But you can setup it on every classes/tags that contain texts.
 In this setup, the "button" tag is scaling. But you can setup it on every classes/tags that you use as buttons.<br />
 </p>
 
-#
+
 
 <h2> Colors </h2>
 <h4> filename: _colors.scss</h4>
