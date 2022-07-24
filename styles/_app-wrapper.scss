@@ -1,0 +1,59 @@
+/*----------APP WRAPPER----------*/
+
+/*Section wrapper*/
+.app__wrapper {
+	width: 100%;
+	padding: 4rem 0;
+
+	@media screen and (max-width: 880px) {
+		height: 100%;
+		padding: 4rem 1rem;
+	}
+}
+
+/*Container wrapper (Section wrapper's first child)*/
+.container__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	min-height: 100vh;
+
+	$sides-spacing: 64px;
+
+	@media screen and (max-width: 880px) {
+		min-height: auto;
+	}
+
+	@media screen and (min-width: 881px) {
+		max-width: 881 - $sides-spacing;
+	}
+
+	@media screen and (min-width: 1280px) {
+		max-width: 1280px - $sides-spacing;
+	}
+
+	@media screen and (min-width: 1366px) {
+		max-width: 1366px - $sides-spacing;
+	}
+
+	@media screen and (min-width: 1440px) {
+		max-width: 1440px - $sides-spacing;
+	}
+
+	@media screen and (min-width: 1680px) {
+		max-width: 1680px - $sides-spacing;
+	}
+
+	@media screen and (min-width: 1920px) {
+		max-width: 1920px - ($sides-spacing * 1.4);
+	}
+
+	@media screen and (min-width: 2560px) {
+		max-width: 2560px - ($sides-spacing * 1.875);
+	}
+
+	@media screen and (min-width: 3840px) {
+		max-width: 3840px - ($sides-spacing * 2.7);
+	}
+}
