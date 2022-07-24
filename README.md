@@ -53,8 +53,8 @@ How to apply (horizontal center alignment example):<br />
 
 <p> App Gap adds spacing between div children and scale perfectly on large screens.<br />
 
-lassname: gap**x: add horizontal spacing between elements.<br />
-lassname: gap**y: add vertical spacing between elements.<br />
+.gap__x: add horizontal spacing between elements.<br />
+.gap__y: add vertical spacing between elements.<br /
 
 How to apply (vertical gap - 32px): <br />
 
