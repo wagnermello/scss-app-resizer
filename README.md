@@ -1,10 +1,10 @@
 <h1> SCSS APP RESIZER
 
-<h2>Resizing your app with precision</h2>
+<h3>Resizing your app with precision</h2>
 
 #
 
-<h3> App Wrapper </h3>
+<h2> App Wrapper </h2>
 <h4> filename: _app-wrapper.scss</h4>
 
 <p>.app__wrapper is used to wrap a section (first div).<br />
@@ -24,7 +24,7 @@ How to apply:<br />
 
 #
 
-<h3> App Flex </h3>
+<h2> App Flex </h2>
 <h4> filename: _app-flex.scss</h4>
 
 <p>App Flex helps a lot to get a clean code.<br />
@@ -49,7 +49,7 @@ How to apply (horizontal center alignment example):<br />
 
 #
 
-<h3> App Gap </h3>
+<h2> App Gap </h2>
 <h4> filename: _app-gap.scss</h4>
 
 <p> App Gap adds spacing between div children and scale perfectly on large screens.<br />
@@ -71,7 +71,7 @@ How to apply (vertical gap - 32px): <br />
 
 #
 
-<h3> App Font Size </h3>
+<h2> App Font Size </h2>
 <h4> filename: _app-font-size.scss</h4>
 
 <p>App Font Size scale fonts perfectly on large screens.
@@ -82,7 +82,7 @@ But you can setup it on every classes/tags that contain texts.
 
 #
 
-<h3> App Button Size </h3>
+<h2> App Button Size </h2>
 <h4> filename: _app-button-size.scss</h4>
 
 <p> App Button Size scale buttons perfectly on large screens.<br />
@@ -91,7 +91,7 @@ In this setup, the "button" tag is scaling. But you can setup it on every classe
 
 #
 
-<h3> Colors </h3>
+<h2> Colors </h2>
 <h4> filename: _colors.scss</h4>
 <p>
 Just setup your color pallete here.<br />
