@@ -12,7 +12,7 @@ YOUR_TAG_OR_CLASSNAME {
 		$min-width: calc($min-width * 1.0937);
 
 		@media screen and (min-width: $min-width) {
-			font-size: $YOUR_CLASS_ATRIBUTE !important;
+			your_class_atribute: $YOUR_CLASS_ATRIBUTE !important;
 		}
 	}
 }
