@@ -14,32 +14,37 @@
 When the view port changes 128px, the class atribute value of an element will scale proportionally.
 For example: if you develop a page with 1366px of width size, and apply this function in an image width, the image will scale proportionally in larger scales.
 
-You can copy it and adapt for any tag or classname that you need</p>
 
 ```
 YOUR_TAG_OR_CLASSNAME {
-	/*----------Change these values if you want----------*/
-	$YOUR_CLASS_ATRIBUTE: 16px;
-	your_class_atribute: $YOUR_CLASS_ATRIBUTE;
-	/*--------------------------------------------------*/
+@mixin scaleFontSize($classAtributeValue, $minWidthMediaQuery) {
+	class-atribute: $classAtributeValue;
 
-	/*-----------media query "min-width" value----------*/
-	$min-width: 1366px;
-	/*--------------------------------------------------*/
-
-	$i: $min-width;
-	@while $min-width < 10000px {
+	$i: $minWidthMediaQuery -128px;
+	@while ($minWidthMediaQuery < 12000px) {
 		$i: $i + 128px;
-		$YOUR_CLASS_ATRIBUTE: calc($YOUR_CLASS_ATRIBUTE * 1.0937);
-		$min-width: calc($min-width * 1.0937);
+		$classAtributeValue: calc($classAtributeValue * 1.0937);
+		$minWidthMediaQuery: calc($minWidthMediaQuery * 1.0937);
 
-		@media screen and (min-width: $min-width) {
-			your_class_atribute: $YOUR_CLASS_ATRIBUTE !important;
+		@media screen and (min-width: $minWidthMediaQuery) {
+			class-atribute: $classAtributeValue !important;
 		}
 	}
 }
+```
+
+
+You'll need to call the @mixing inside your class. Here's an exemple to apply on a font-size atribute from a "p" tag:
+
 
 ```
+p {
+	font-size: 1rem;
+	@include scaleFontSize(1rem, 1366px);
+}
+
+```
+
 
 <h2> App Wrapper </h2>
 <h4> filename: _app-wrapper.scss</h4>
