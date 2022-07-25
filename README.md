@@ -1,24 +1,25 @@
 <h1> SCSS APP RESIZER
 
 <h3>Resizing your app with precision</h2>
+<p>Check an exemple on my website: https://wagnermello.com/scss-app-resizer/</p>
 
 <img src="./example-with-reactjs-app/src/assets/readme.gif">
 
-<p>Check it on my website: https://wagnermello.com/scss-app-resizer/</p>
 
-#
 
 <h2>Scale Function Sample</h2>
-<h4>filename: _scale-function-sample</h4>
+<h4>filename: _scale-function-sample.scss</h4>
 
 <p>This is the function that can scale any element.
-When the view port change 128px, the class atribute value of an element will scale proportionally.
-For example: if you apply this function in a image width, the image will scale proportionally in large scales.</p>
+When the view port changes 128px, the class atribute value of an element will scale proportionally.
+For example: if you develop a page with 1366px of width size, and apply this function in an image width, the image will scale proportionally in larger scales.
+
+You can copy it and adapt for any tag or classname that you need</p>
 
 ```
 YOUR_TAG_OR_CLASSNAME {
 	/*----------Change these values if you want----------*/
-	$YOUR_CLASS_ATRIBUTE: 20px;
+	$YOUR_CLASS_ATRIBUTE: 16px;
 	your_class_atribute: $YOUR_CLASS_ATRIBUTE;
 	/*---------------------------------------------------*/
 
@@ -30,7 +31,7 @@ YOUR_TAG_OR_CLASSNAME {
 		$min-width: calc($min-width * 1.0937);
 
 		@media screen and (min-width: $min-width) {
-			font-size: $YOUR_CLASS_ATRIBUTE !important;
+			your_class_atribute: $YOUR_CLASS_ATRIBUTE !important;
 		}
 	}
 }
@@ -81,12 +82,12 @@ How to apply (horizontal center alignment example):<br />
 <h2> App Gap </h2>
 <h4> filename: _app-gap.scss</h4>
 
-<p> App Gap adds spacing between div children and scale perfectly on large screens.<br />
+<p> App Gap adds spacing between div children and scale perfectly.<br />
 
-.gap**x: add horizontal spacing between elements.<br />
-.gap**y: add vertical spacing between elements.<br /
+.gap__x: add horizontal spacing between elements.<br />
+.gap__y: add vertical spacing between elements.<br />
 
-How to apply (vertical gap - 32px): <br />
+How to apply (vertical gap = 32px): <br />
 
 </p>
 
@@ -101,9 +102,9 @@ How to apply (vertical gap - 32px): <br />
 <h2> App Font Size </h2>
 <h4> filename: _app-font-size.scss</h4>
 
-<p>App Font Size scale fonts perfectly on large screens.
-In this setup, the "p" tag and "h1" tag are scaling.
+<p>App Font Size makes fonts scale perfectly.
 <br />
+In this setup, the "p" tag and "h1" tag are scaling.
 But you can setup it on every classes/tags that contain texts.
 </p>
 
