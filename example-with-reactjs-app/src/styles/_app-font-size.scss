@@ -11,8 +11,12 @@ p {
 
 	font-size: $p-font-size;
 	line-height: $p-line-height;
+
+	/*----------min-width media query value----------*/
 	$min-width: 1366px;
-	$i: 1367px;
+	/*-----------------------------------------------*/
+
+	$i: $min-width;
 	@while $min-width < 10000px {
 		$i: $i + 128px;
 		$p-font-size: calc($p-font-size * 1.0937);
@@ -29,11 +33,14 @@ p {
 h1 {
 	/*----------Change these values if you want----------*/
 	$h1-font-size: 24px;
+	font-size: $h1-font-size;
 	/*---------------------------------------------------*/
 
-	font-size: $h1-font-size;
+	/*----------min-width media query value----------*/
 	$min-width: 1366px;
-	$i: 1367px;
+	/*-----------------------------------------------*/
+
+	$i: $min-width;
 	@while $min-width < 10000px {
 		$i: $i + 128px;
 		$h1-font-size: calc($h1-font-size * 1.0937);
@@ -48,11 +55,14 @@ h1 {
 h2 {
 	/*----------Change these values if you want----------*/
 	$h2-font-size: 20px;
+	font-size: $h2-font-size;
 	/*---------------------------------------------------*/
 
-	font-size: $h2-font-size;
+	/*----------min-width media query value----------*/
 	$min-width: 1366px;
-	$i: 1367px;
+	/*-----------------------------------------------*/
+
+	$i: $min-width;
 	@while $min-width < 10000px {
 		$i: $i + 128px;
 		$h2-font-size: calc($h2-font-size * 1.0937);

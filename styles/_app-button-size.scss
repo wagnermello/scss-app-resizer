@@ -18,8 +18,11 @@ button {
 	padding: $button-padding-top-bottom $button-padding-left-right;
 	/*--------------------------------------------------*/
 
+	/*----------min-width media query value----------*/
 	$min-width: 1366px;
-	$i: 1367px;
+	/*-----------------------------------------------*/
+
+	$i: $min-width;
 	@while $min-width < 10000px {
 		$i: $i + 128px;
 		$button-font-size: calc($button-font-size * 1.0937);
