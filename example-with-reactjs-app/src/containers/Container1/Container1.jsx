@@ -14,9 +14,8 @@ function Container1() {
 							<img src={sass} alt="sass" />
 						</div>
 						<div className="container1__text-container flex__column__start gap__y32">
-							<h2>Zoom out this page</h2>
 							<img src={sass} alt="sass" />
-
+							<h2>Zoom out this page</h2>
 							<p>
 								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 								Debitis, placeat illum officiis aspernatur sed facere

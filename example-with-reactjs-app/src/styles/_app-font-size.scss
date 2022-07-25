@@ -7,72 +7,59 @@ p {
 	/*----------Change these values if you want----------*/
 	$p-font-size: 16px;
 	$p-line-height: 32px;
-	/*------------------------------------------------------*/
+	/*---------------------------------------------------*/
 
-	font-size: $p-font-size !important;
-	line-height: $p-line-height !important;
+	font-size: $p-font-size;
+	line-height: $p-line-height;
+	$min-width: 1366px;
+	$i: 1367px;
+	@while $min-width < 10000px {
+		$i: $i + 128px;
+		$p-font-size: calc($p-font-size * 1.0937);
+		$p-line-height: calc($p-line-height * 1.0937);
+		$min-width: calc($min-width * 1.0937);
 
-	@media screen and (min-width: 1920px) {
-		font-size: $p-font-size * 1.4 !important;
-		line-height: $p-line-height * 1.4 !important;
-	}
-
-	@media screen and (min-width: 2560px) {
-		font-size: $p-font-size * 1.875 !important;
-		line-height: $p-line-height * 1.875 !important;
-	}
-
-	@media screen and (min-width: 3680px) {
-		font-size: $p-font-size * 2.7 !important;
-		line-height: $p-line-height * 2.7 !important;
-	}
-	@media screen and (min-width: 4840px) {
-		font-size: $p-font-size * 3.4 !important;
-		line-height: $p-line-height * 3.4 !important;
+		@media screen and (min-width: $min-width) {
+			font-size: $p-font-size !important;
+			line-height: $p-line-height !important;
+		}
 	}
 }
 
 h1 {
-	/*----------Change this value if you want----------*/
+	/*----------Change these values if you want----------*/
 	$h1-font-size: 24px;
-	/*------------------------------------------------------*/
+	/*---------------------------------------------------*/
 
 	font-size: $h1-font-size;
+	$min-width: 1366px;
+	$i: 1367px;
+	@while $min-width < 10000px {
+		$i: $i + 128px;
+		$h1-font-size: calc($h1-font-size * 1.0937);
+		$min-width: calc($min-width * 1.0937);
 
-	@media screen and (min-width: 1920px) {
-		font-size: $h1-font-size * 1.4 !important;
-	}
-	@media screen and (min-width: 2560px) {
-		font-size: $h1-font-size * 1.875 !important;
-	}
-	@media screen and (min-width: 3840px) {
-		font-size: $h1-font-size * 2.7 !important;
-	}
-	@media screen and (min-width: 4840px) {
-		font-size: $h1-font-size * 3.4 !important;
+		@media screen and (min-width: $min-width) {
+			font-size: $h1-font-size !important;
+		}
 	}
 }
 
 h2 {
-	/*----------Change this value if you want----------*/
+	/*----------Change these values if you want----------*/
 	$h2-font-size: 20px;
-	/*------------------------------------------------------*/
+	/*---------------------------------------------------*/
 
 	font-size: $h2-font-size;
+	$min-width: 1366px;
+	$i: 1367px;
+	@while $min-width < 10000px {
+		$i: $i + 128px;
+		$h2-font-size: calc($h2-font-size * 1.0937);
+		$min-width: calc($min-width * 1.0937);
 
-	@media screen and (min-width: 1920px) {
-		font-size: $h2-font-size * 1.4 !important;
-	}
-	@media screen and (min-width: 2560px) {
-		font-size: $h2-font-size * 1.875 !important;
-	}
-	@media screen and (min-width: 3840px) {
-		font-size: $h2-font-size * 2.7 !important;
-	}
-	@media screen and (min-width: 3840px) {
-		font-size: $h2-font-size * 2.7 !important;
-	}
-	@media screen and (min-width: 4840px) {
-		font-size: $h2-font-size * 3.4 !important;
+		@media screen and (min-width: $min-width) {
+			font-size: $h2-font-size !important;
+		}
 	}
 }

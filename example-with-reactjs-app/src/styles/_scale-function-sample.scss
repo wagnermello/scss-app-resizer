@@ -1,0 +1,18 @@
+YOUR_TAG_OR_CLASSNAME {
+	/*----------Change these values if you want----------*/
+	$YOUR_CLASS_ATRIBUTE: 20px;
+	your_class_atribute: $YOUR_CLASS_ATRIBUTE;
+	/*---------------------------------------------------*/
+
+	$min-width: 1366px;
+	$i: 1367px;
+	@while $min-width < 10000px {
+		$i: $i + 128px;
+		$YOUR_CLASS_ATRIBUTE: calc($YOUR_CLASS_ATRIBUTE * 1.0937);
+		$min-width: calc($min-width * 1.0937);
+
+		@media screen and (min-width: $min-width) {
+			font-size: $YOUR_CLASS_ATRIBUTE !important;
+		}
+	}
+}

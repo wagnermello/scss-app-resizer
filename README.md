@@ -8,6 +8,35 @@
 
 #
 
+<h2>Scale Function Sample</h2>
+<h4>filename: _scale-function-sample</h4>
+
+<p>This is the function that can scale any element.
+When the view port change 128px, the class atribute value of an element will scale proportionally.
+For example: if you apply this function in a image width, the image will scale proportionally in large scales.</p>
+
+```
+YOUR_TAG_OR_CLASSNAME {
+	/*----------Change these values if you want----------*/
+	$YOUR_CLASS_ATRIBUTE: 20px;
+	your_class_atribute: $YOUR_CLASS_ATRIBUTE;
+	/*---------------------------------------------------*/
+
+	$min-width: 1366px;
+	$i: 1367px;
+	@while $min-width < 10000px {
+		$i: $i + 128px;
+		$YOUR_CLASS_ATRIBUTE: calc($YOUR_CLASS_ATRIBUTE * 1.0937);
+		$min-width: calc($min-width * 1.0937);
+
+		@media screen and (min-width: $min-width) {
+			font-size: $YOUR_CLASS_ATRIBUTE !important;
+		}
+	}
+}
+
+```
+
 <h2> App Wrapper </h2>
 <h4> filename: _app-wrapper.scss</h4>
 
@@ -26,7 +55,6 @@ How to apply:<br />
 </section>
 ```
 
-	
 <h2> App Flex </h2>
 <h4> filename: _app-flex.scss</h4>
 
@@ -50,15 +78,13 @@ How to apply (horizontal center alignment example):<br />
 </div>
 ```
 
-
-
 <h2> App Gap </h2>
 <h4> filename: _app-gap.scss</h4>
 
 <p> App Gap adds spacing between div children and scale perfectly on large screens.<br />
 
-.gap__x: add horizontal spacing between elements.<br />
-.gap__y: add vertical spacing between elements.<br /
+.gap**x: add horizontal spacing between elements.<br />
+.gap**y: add vertical spacing between elements.<br /
 
 How to apply (vertical gap - 32px): <br />
 
@@ -72,8 +98,6 @@ How to apply (vertical gap - 32px): <br />
 </div>
 ```
 
-
-
 <h2> App Font Size </h2>
 <h4> filename: _app-font-size.scss</h4>
 
@@ -83,16 +107,12 @@ In this setup, the "p" tag and "h1" tag are scaling.
 But you can setup it on every classes/tags that contain texts.
 </p>
 
-
-
 <h2> App Button Size </h2>
 <h4> filename: _app-button-size.scss</h4>
 
 <p> App Button Size scale buttons perfectly on large screens.<br />
 In this setup, the "button" tag is scaling. But you can setup it on every classes/tags that you use as buttons.<br />
 </p>
-
-
 
 <h2> Colors </h2>
 <h4> filename: _colors.scss</h4>
