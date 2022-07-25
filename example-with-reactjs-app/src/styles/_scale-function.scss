@@ -175,9 +175,8 @@
 		}
 	}
 }
-
 /*----------HEIGHT----------*/
-@mixin scaleMinHeight($classAtributeValue, $minWidthMediaQuery) {
+@mixin scaleHeight($classAtributeValue, $minWidthMediaQuery) {
 	height: $classAtributeValue;
 
 	$i: $minWidthMediaQuery -128px;
@@ -193,7 +192,7 @@
 }
 
 /*----------MIN-HEIGHT----------*/
-@mixin scaleMaxHeight($classAtributeValue, $minWidthMediaQuery) {
+@mixin scaleMinHeight($classAtributeValue, $minWidthMediaQuery) {
 	min-height: $classAtributeValue;
 
 	$i: $minWidthMediaQuery -128px;
@@ -208,8 +207,8 @@
 	}
 }
 
-/*----------MAX-HEIGHT----------*/
-@mixin scaleWidth($classAtributeValue, $minWidthMediaQuery) {
+/*----------MIN-HEIGHT----------*/
+@mixin scaleMaxHeight($classAtributeValue, $minWidthMediaQuery) {
 	max-height: $classAtributeValue;
 
 	$i: $minWidthMediaQuery -128px;
