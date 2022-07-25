@@ -19,6 +19,8 @@
 	margin: 0 auto;
 	min-height: 100vh;
 	padding: 4rem 0;
+	@include scalePadding(4rem, 0, 4rem, 0, 1366px);
+
 	/*Change this value if you want to change the side spacing of your page*/
 	$sides-spacing: 64px;
 	/*---------------------------------------------------------------------*/
@@ -35,7 +37,7 @@
 		max-width: 1280px - $sides-spacing;
 	}
 
-	/*-------SCALE-UNTIL-12000px*/
+	/*-------SCALE-FROM 1366px to 12000px----------*/
 	/*----------min-width media query value----------*/
 	$min-width: 1366px;
 	/*-----------------------------------------------*/
