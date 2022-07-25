@@ -35,12 +35,13 @@
 		max-width: 1280px - $sides-spacing;
 	}
 
+	/*-------SCALE-UNTIL-12000px*/
 	/*----------min-width media query value----------*/
 	$min-width: 1366px;
 	/*-----------------------------------------------*/
 
-	$i: $min-width;
-	@while $min-width < 10000px {
+	$i: $min-width - 128px;
+	@while $min-width < 12000px {
 		$i: $i + 128px;
 		$sides-spacing: calc($sides-spacing * 1.0937);
 		$min-width: calc($min-width * 1.0937);

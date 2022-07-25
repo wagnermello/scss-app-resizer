@@ -1,75 +1,21 @@
+@import "./scale-function";
+
 /*----------FONT RESIZER----------*/
 
-/*Large screens font resizer*/
-/*If you want to resize for small screens, just add the media queries that you want*/
-
 p {
-	/*----------Change these values if you want----------*/
-	$p-font-size: 16px;
-	$p-line-height: 32px;
-	/*---------------------------------------------------*/
+	font-size: 1rem;
+	@include scaleFontSize(1rem, 1366px);
 
-	font-size: $p-font-size;
-	line-height: $p-line-height;
-
-	/*----------min-width media query value----------*/
-	$min-width: 1366px;
-	/*-----------------------------------------------*/
-
-	$i: $min-width;
-	@while $min-width < 10000px {
-		$i: $i + 128px;
-		$p-font-size: calc($p-font-size * 1.0937);
-		$p-line-height: calc($p-line-height * 1.0937);
-		$min-width: calc($min-width * 1.0937);
-
-		@media screen and (min-width: $min-width) {
-			font-size: $p-font-size !important;
-			line-height: $p-line-height !important;
-		}
-	}
+	line-height: 2rem;
+	@include scaleLineHeight(2rem, 1366px);
 }
 
 h1 {
-	/*----------Change these values if you want----------*/
-	$h1-font-size: 24px;
-	font-size: $h1-font-size;
-	/*---------------------------------------------------*/
-
-	/*----------min-width media query value----------*/
-	$min-width: 1366px;
-	/*-----------------------------------------------*/
-
-	$i: $min-width;
-	@while $min-width < 10000px {
-		$i: $i + 128px;
-		$h1-font-size: calc($h1-font-size * 1.0937);
-		$min-width: calc($min-width * 1.0937);
-
-		@media screen and (min-width: $min-width) {
-			font-size: $h1-font-size !important;
-		}
-	}
+	font-size: 1.5rem;
+	@include scaleFontSize(1.5rem, 1366px);
 }
 
 h2 {
-	/*----------Change these values if you want----------*/
-	$h2-font-size: 20px;
-	font-size: $h2-font-size;
-	/*---------------------------------------------------*/
-
-	/*----------min-width media query value----------*/
-	$min-width: 1366px;
-	/*-----------------------------------------------*/
-
-	$i: $min-width;
-	@while $min-width < 10000px {
-		$i: $i + 128px;
-		$h2-font-size: calc($h2-font-size * 1.0937);
-		$min-width: calc($min-width * 1.0937);
-
-		@media screen and (min-width: $min-width) {
-			font-size: $h2-font-size !important;
-		}
-	}
+	font-size: 1.25rem;
+	@include scaleFontSize(1.25rem, 1366px);
 }

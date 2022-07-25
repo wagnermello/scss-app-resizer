@@ -1,0 +1,225 @@
+/*----------FONT-SIZE----------*/
+@mixin scaleFontSize($classAtributeValue, $minWidthMediaQuery) {
+	font-size: $classAtributeValue;
+
+	$i: $minWidthMediaQuery -128px;
+	@while ($minWidthMediaQuery < 12000px) {
+		$i: $i + 128px;
+		$classAtributeValue: calc($classAtributeValue * 1.0937);
+		$minWidthMediaQuery: calc($minWidthMediaQuery * 1.0937);
+
+		@media screen and (min-width: $minWidthMediaQuery) {
+			font-size: $classAtributeValue !important;
+		}
+	}
+}
+
+/*----------LINE-HEIGHT----------*/
+@mixin scaleLineHeight($classAtributeValue, $minWidthMediaQuery) {
+	line-height: $classAtributeValue;
+
+	$i: $minWidthMediaQuery -128px;
+	@while ($minWidthMediaQuery < 12000px) {
+		$i: $i + 128px;
+		$classAtributeValue: calc($classAtributeValue * 1.0937);
+		$minWidthMediaQuery: calc($minWidthMediaQuery * 1.0937);
+
+		@media screen and (min-width: $minWidthMediaQuery) {
+			line-height: $classAtributeValue !important;
+		}
+	}
+}
+
+/*----------BORDER-RADIUS----------*/
+@mixin scaleBorderRadius($classAtributeValue, $minWidthMediaQuery) {
+	border-radius: $classAtributeValue;
+
+	$i: $minWidthMediaQuery -128px;
+	@while ($minWidthMediaQuery < 12000px) {
+		$i: $i + 128px;
+		$classAtributeValue: calc($classAtributeValue * 1.0937);
+		$minWidthMediaQuery: calc($minWidthMediaQuery * 1.0937);
+
+		@media screen and (min-width: $minWidthMediaQuery) {
+			border-radius: $classAtributeValue !important;
+		}
+	}
+}
+
+/*----------PADDING----------*/
+@mixin scalePadding(
+	$paddingTop,
+	$paddingRight,
+	$paddingBottom,
+	$paddingLeft,
+	$minWidthMediaQuery
+) {
+	padding: $paddingTop $paddingRight $paddingBottom $paddingLeft;
+
+	$i: $minWidthMediaQuery -128px;
+	@while ($minWidthMediaQuery < 12000px) {
+		$i: $i + 128px;
+		$paddingTop: calc($paddingTop * 1.0937);
+		$paddingRight: calc($paddingRight * 1.0937);
+		$paddingBottom: calc($paddingBottom * 1.0937);
+		$paddingLeft: calc($paddingLeft * 1.0937);
+		$minWidthMediaQuery: calc($minWidthMediaQuery * 1.0937);
+
+		@media screen and (min-width: $minWidthMediaQuery) {
+			padding: $paddingTop $paddingRight $paddingBottom $paddingLeft !important;
+		}
+	}
+}
+
+/*----------MARGIN----------*/
+@mixin scaleMargin(
+	$marginTop,
+	$marginRight,
+	$marginBottom,
+	$marginLeft,
+	$minWidthMediaQuery
+) {
+	margin: $marginTop $marginRight $marginBottom $marginLeft;
+
+	$i: $minWidthMediaQuery -128px;
+	@while ($minWidthMediaQuery < 12000px) {
+		$i: $i + 128px;
+		$marginTop: calc($marginTop * 1.0937);
+		$marginRight: calc($marginRight * 1.0937);
+		$marginBottom: calc($marginBottom * 1.0937);
+		$marginLeft: calc($marginLeft * 1.0937);
+		$minWidthMediaQuery: calc($minWidthMediaQuery * 1.0937);
+
+		@media screen and (min-width: $minWidthMediaQuery) {
+			margin: $marginTop $marginRight $marginBottom $marginLeft !important;
+		}
+	}
+}
+
+/*----------GAP-Y----------*/
+@mixin scaleGapY($classAtributeValue, $minWidthMediaQuery) {
+	gap: $classAtributeValue 0;
+
+	$i: $minWidthMediaQuery -128px;
+	@while ($minWidthMediaQuery < 12000px) {
+		$i: $i + 128px;
+		$classAtributeValue: calc($classAtributeValue * 1.0937);
+		$minWidthMediaQuery: calc($minWidthMediaQuery * 1.0937);
+
+		@media screen and (min-width: $minWidthMediaQuery) {
+			gap: $classAtributeValue 0 !important;
+		}
+	}
+}
+
+/*----------GAP-X----------*/
+@mixin scaleGapX($classAtributeValue, $minWidthMediaQuery) {
+	gap: 0 $classAtributeValue;
+
+	$i: $minWidthMediaQuery -128px;
+	@while ($minWidthMediaQuery < 12000px) {
+		$i: $i + 128px;
+		$classAtributeValue: calc($classAtributeValue * 1.0937);
+		$minWidthMediaQuery: calc($minWidthMediaQuery * 1.0937);
+
+		@media screen and (min-width: $minWidthMediaQuery) {
+			gap: 0 $classAtributeValue !important;
+		}
+	}
+}
+
+/*----------WIDTH----------*/
+@mixin scaleWidth($classAtributeValue, $minWidthMediaQuery) {
+	width: $classAtributeValue;
+
+	$i: $minWidthMediaQuery -128px;
+	@while ($minWidthMediaQuery < 12000px) {
+		$i: $i + 128px;
+		$classAtributeValue: calc($classAtributeValue * 1.0937);
+		$minWidthMediaQuery: calc($minWidthMediaQuery * 1.0937);
+
+		@media screen and (min-width: $minWidthMediaQuery) {
+			width: $classAtributeValue !important;
+		}
+	}
+}
+
+/*----------MIN-WIDTH----------*/
+@mixin scaleMinWidth($classAtributeValue, $minWidthMediaQuery) {
+	min-width: $classAtributeValue;
+
+	$i: $minWidthMediaQuery -128px;
+	@while ($minWidthMediaQuery < 12000px) {
+		$i: $i + 128px;
+		$classAtributeValue: calc($classAtributeValue * 1.0937);
+		$minWidthMediaQuery: calc($minWidthMediaQuery * 1.0937);
+
+		@media screen and (min-width: $minWidthMediaQuery) {
+			min-width: $classAtributeValue !important;
+		}
+	}
+}
+
+/*----------MAX-WIDTH----------*/
+@mixin scaleMaxWidth($classAtributeValue, $minWidthMediaQuery) {
+	max-width: $classAtributeValue;
+
+	$i: $minWidthMediaQuery -128px;
+	@while ($minWidthMediaQuery < 12000px) {
+		$i: $i + 128px;
+		$classAtributeValue: calc($classAtributeValue * 1.0937);
+		$minWidthMediaQuery: calc($minWidthMediaQuery * 1.0937);
+
+		@media screen and (min-width: $minWidthMediaQuery) {
+			max-width: $classAtributeValue !important;
+		}
+	}
+}
+
+/*----------HEIGHT----------*/
+@mixin scaleMinHeight($classAtributeValue, $minWidthMediaQuery) {
+	height: $classAtributeValue;
+
+	$i: $minWidthMediaQuery -128px;
+	@while ($minWidthMediaQuery < 12000px) {
+		$i: $i + 128px;
+		$classAtributeValue: calc($classAtributeValue * 1.0937);
+		$minWidthMediaQuery: calc($minWidthMediaQuery * 1.0937);
+
+		@media screen and (min-width: $minWidthMediaQuery) {
+			height: $classAtributeValue !important;
+		}
+	}
+}
+
+/*----------MIN-HEIGHT----------*/
+@mixin scaleMaxHeight($classAtributeValue, $minWidthMediaQuery) {
+	min-height: $classAtributeValue;
+
+	$i: $minWidthMediaQuery -128px;
+	@while ($minWidthMediaQuery < 12000px) {
+		$i: $i + 128px;
+		$classAtributeValue: calc($classAtributeValue * 1.0937);
+		$minWidthMediaQuery: calc($minWidthMediaQuery * 1.0937);
+
+		@media screen and (min-width: $minWidthMediaQuery) {
+			min-height: $classAtributeValue !important;
+		}
+	}
+}
+
+/*----------MAX-HEIGHT----------*/
+@mixin scaleWidth($classAtributeValue, $minWidthMediaQuery) {
+	max-height: $classAtributeValue;
+
+	$i: $minWidthMediaQuery -128px;
+	@while ($minWidthMediaQuery < 12000px) {
+		$i: $i + 128px;
+		$classAtributeValue: calc($classAtributeValue * 1.0937);
+		$minWidthMediaQuery: calc($minWidthMediaQuery * 1.0937);
+
+		@media screen and (min-width: $minWidthMediaQuery) {
+			max-height: $classAtributeValue !important;
+		}
+	}
+}
