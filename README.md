@@ -21,10 +21,13 @@ YOUR_TAG_OR_CLASSNAME {
 	/*----------Change these values if you want----------*/
 	$YOUR_CLASS_ATRIBUTE: 16px;
 	your_class_atribute: $YOUR_CLASS_ATRIBUTE;
-	/*---------------------------------------------------*/
+	/*--------------------------------------------------*/
 
+	/*-----------media query "min-width" value----------*/
 	$min-width: 1366px;
-	$i: 1367px;
+	/*--------------------------------------------------*/
+
+	$i: $min-width;
 	@while $min-width < 10000px {
 		$i: $i + 128px;
 		$YOUR_CLASS_ATRIBUTE: calc($YOUR_CLASS_ATRIBUTE * 1.0937);
