@@ -1,6 +1,5 @@
 {
 	"name": "exemple-with-reactjs-app",
-	"homepage": "https://wagnermello.com/scss-app-resizer/",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
