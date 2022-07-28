@@ -7,8 +7,8 @@
 
 
 
-<h2>Scale Function Sample</h2>
-<h4>filename: _scale-function-sample.scss</h4>
+<h2>Scale Function</h2>
+<h4>filename: _scale-function.scss</h4>
 
 <p>This is the function that can scale any element.
 When the view port changes 128px, the class atribute value of an element will scale proportionally.
@@ -38,6 +38,8 @@ You'll need to call the @mixing inside your class. Here's an exemple to apply on
 
 
 ```
+@import "./scale-function.scss"
+
 p {
 	font-size: 1rem;
 	@include scaleFontSize(1rem, 1366px);
