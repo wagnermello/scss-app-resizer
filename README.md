@@ -45,6 +45,8 @@ p {
 
 ```
 
+In this example, you're scaling the font-size attribute, width "@media screen and (min-width: 1366px)". The font size will scale for any screen bigger than 1366px.
+
 
 <h2> App Wrapper </h2>
 <h4> filename: _app-wrapper.scss</h4>
