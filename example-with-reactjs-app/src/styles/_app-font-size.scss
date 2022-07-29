@@ -4,18 +4,18 @@
 
 p {
 	font-size: 1rem;
-	@include scaleFontSize(1rem, 1366px);
+	@include scaleFontSize(1rem, 1280px);
 
 	line-height: 2rem;
-	@include scaleLineHeight(2rem, 1366px);
+	@include scaleLineHeight(2rem, 1280px);
 }
 
 h1 {
 	font-size: 1.5rem;
-	@include scaleFontSize(1.5rem, 1366px);
+	@include scaleFontSize(1.5rem, 1280px);
 }
 
 h2 {
 	font-size: 1.25rem;
-	@include scaleFontSize(1.25rem, 1366px);
+	@include scaleFontSize(1.25rem, 1280px);
 }

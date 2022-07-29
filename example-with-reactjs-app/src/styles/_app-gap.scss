@@ -4,20 +4,20 @@
 
 .gap__y16 {
 	gap: 1rem 0;
-	@include scaleGapY(1rem, 1366px);
+	@include scaleGapY(1rem, 1280px);
 }
 
 .gap__y32 {
 	gap: 2rem 0;
-	@include scaleGapY(2rem, 1366px);
+	@include scaleGapY(2rem, 1280px);
 }
 
 .gap__y64 {
 	gap: 4rem 0;
-	@include scaleGapY(4rem, 1366px);
+	@include scaleGapY(4rem, 1280px);
 }
 
 .gap__x64 {
 	gap: 0 4rem;
-	@include scaleGapX(4rem, 1366px);
+	@include scaleGapX(4rem, 1280px);
 }

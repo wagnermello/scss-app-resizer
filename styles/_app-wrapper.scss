@@ -20,7 +20,7 @@
 	margin: 0 auto;
 	min-height: 100vh;
 	padding: 4rem 0;
-	@include scalePadding(4rem, 0, 4rem, 0, 1366px);
+	@include scalePadding(4rem, 0, 4rem, 0, 1280px);
 
 	/*Change this value if you want to change the side spacing of your page*/
 	$sides-spacing: 64px;
@@ -40,7 +40,7 @@
 
 	/*-------SCALE-UNTIL-12000px*/
 	/*----------min-width media query value----------*/
-	$min-width: 1366px;
+	$min-width: 1280px;
 	/*-----------------------------------------------*/
 
 	$i: $min-width - 128px;

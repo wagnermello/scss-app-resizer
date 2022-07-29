@@ -7,11 +7,11 @@ button {
 	}
 
 	font-size: 1rem;
-	@include scaleFontSize(1rem, 1366px);
+	@include scaleFontSize(1rem, 1280px);
 
 	border-radius: 0.5rem;
-	@include scaleBorderRadius(0.5rem, 1366px);
+	@include scaleBorderRadius(0.5rem, 1280px);
 
 	padding: 1rem 2rem;
-	@include scalePadding(1rem, 2rem, 1rem, 2rem, 1366px);
+	@include scalePadding(1rem, 2rem, 1rem, 2rem, 1280px);
 }
