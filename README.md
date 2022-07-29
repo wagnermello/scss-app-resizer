@@ -12,7 +12,7 @@
 
 <p>This is the function that can scale any element.
 When the view port changes 128px, the class atribute value of an element will scale proportionally.
-For example: if you develop a page with 1366px of width size, and apply this function in an image width, the image will scale proportionally in larger scales.
+For example: if you develop a page with 1280px of width size, and apply this function in an image width, the image will scale proportionally in larger scales.
 
 
 ```
@@ -42,12 +42,12 @@ You'll need to call the @mixing inside your class. Here's an exemple to apply on
 
 p {
 	font-size: 1rem;
-	@include scaleFontSize(1rem, 1366px);
+	@include scaleFontSize(1rem, 1280px);
 }
 
 ```
 
-In this example, you're scaling the font-size attribute, width "@media screen and (min-width: 1366px)". The font size will scale for any screen bigger than 1366px.
+In this example, you're scaling the font-size attribute, width "@media screen and (min-width: 1280px)". The font size will scale for any screen bigger than 1280px.
 
 
 <h2> App Wrapper </h2>
