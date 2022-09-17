@@ -11,7 +11,7 @@
 <h4>filename: _scale-function.scss</h4>
 
 <p>This is the function that can scale any element.
-When the view port changes 128px, the class atribute value of an element will scale proportionally.
+When the view port changes 128px, the css atribute value of an element will scale proportionally.
 For example: if you develop a page with 1280px of width size, and apply this function in an image width, the image will scale proportionally in larger scales.
 
 
@@ -34,14 +34,13 @@ YOUR_TAG_OR_CLASSNAME {
 ```
 
 
-You'll need to call the @mixing inside your class. Here's an exemple to apply on a font-size atribute from a "p" tag:
+You'll need to call the @mixing inside your css atribute. Here's an exemple to apply on a font-size atribute from a "p" tag:
 
 
 ```
 @import "./scale-function.scss"
 
 p {
-	font-size: 1rem;
 	@include scaleFontSize(1rem, 1280px);
 }
 
