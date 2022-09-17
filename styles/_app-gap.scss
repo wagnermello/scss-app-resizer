@@ -2,12 +2,82 @@
 
 /*----------GAP RESIZER----------*/
 
+/*----------GAP Y----------*/
+.gap__y4 {
+	gap: 0.25rem 0;
+	@include scaleGapY(0.25rem, 1280px);
+}
+.gap__y8 {
+	gap: 0.5rem 0;
+	@include scaleGapY(0.5rem, 1280px);
+}
 .gap__y16 {
 	gap: 1rem 0;
 	@include scaleGapY(1rem, 1280px);
+}
+.gap__y20 {
+	gap: 1.25rem 0;
+	@include scaleGapY(1.25rem, 1280px);
+}
+.gap__y24 {
+	gap: 1.5rem 0;
+	@include scaleGapY(1.5rem, 1280px);
+}
+.gap__y32 {
+	gap: 2rem 0;
+	@include scaleGapY(2rem, 1280px);
+}
+.gap__y48 {
+	gap: 3rem 0;
+	@include scaleGapY(3rem, 1280px);
+}
+.gap__y64 {
+	gap: 4rem 0;
+	@include scaleGapY(4rem, 1280px);
+}
+
+/*----------GAP X----------*/
+.gap__x4 {
+	gap: 0 0.25rem;
+	@include scaleGapX(0.25rem, 1280px);
+}
+
+.gap__x8 {
+	gap: 0 0.5rem;
+	@include scaleGapX(0.5rem, 1280px);
+}
+
+.gap__x16 {
+	gap: 0 1rem;
+	@include scaleGapX(1rem, 1280px);
+}
+
+.gap__x20 {
+	gap: 0 1.25rem;
+	@include scaleGapX(1.25rem, 1280px);
+}
+
+.gap__x24 {
+	gap: 0 1.5rem;
+	@include scaleGapX(1.5rem, 1280px);
+}
+
+.gap__x32 {
+	gap: 0 2rem;
+	@include scaleGapX(2rem, 1280px);
+}
+
+.gap__x48 {
+	gap: 0 3rem;
+	@include scaleGapX(3rem, 1280px);
 }
 
 .gap__x64 {
 	gap: 0 4rem;
 	@include scaleGapX(4rem, 1280px);
+}
+
+.gap__x128 {
+	gap: 0 8em;
+	@include scaleGapX(8rem, 1280px);
 }

@@ -222,3 +222,89 @@
 		}
 	}
 }
+
+/*----------BOX-SHADOW----------*/
+@mixin scaleBoxShadow(
+	$classAtributeValue1,
+	$classAtributeValue2,
+	$classAtributeValue3,
+	$classAtributeValue4,
+	$minWidthMediaQuery
+) {
+	box-shadow: $classAtributeValue1 $classAtributeValue2 $classAtributeValue3
+		$classAtributeValue4 rgb(00, 00, 00, 0.16);
+
+	$i: $minWidthMediaQuery -128px;
+	@while ($minWidthMediaQuery < 12000px) {
+		$i: $i + 128px;
+		$classAtributeValue1: calc($classAtributeValue1 * 1.0937);
+		$classAtributeValue2: calc($classAtributeValue2 * 1.0937);
+		$classAtributeValue3: calc($classAtributeValue3 * 1.0937);
+		$classAtributeValue4: calc($classAtributeValue4 * 1.0937);
+		$minWidthMediaQuery: calc($minWidthMediaQuery * 1.0937);
+
+		@media screen and (min-width: $minWidthMediaQuery) {
+			box-shadow: $classAtributeValue1 $classAtributeValue2 $classAtributeValue3,
+				$classAtributeValue4 rgb(00, 00, 00, 0.16) !important;
+		}
+	}
+}
+
+/*----------BOX-SHADOW----------*/
+@mixin scaleBoxShadow2(
+	$classAtributeValue1,
+	$classAtributeValue2,
+	$classAtributeValue3,
+	$classAtributeValue4,
+	$minWidthMediaQuery
+) {
+	box-shadow: $classAtributeValue1 $classAtributeValue2 $classAtributeValue3
+		$classAtributeValue4 rgb(00, 00, 00, 0.06);
+
+	$i: $minWidthMediaQuery -128px;
+	@while ($minWidthMediaQuery < 12000px) {
+		$i: $i + 128px;
+		$classAtributeValue1: calc($classAtributeValue1 * 1.0937);
+		$classAtributeValue2: calc($classAtributeValue2 * 1.0937);
+		$classAtributeValue3: calc($classAtributeValue3 * 1.0937);
+		$classAtributeValue4: calc($classAtributeValue4 * 1.0937);
+		$minWidthMediaQuery: calc($minWidthMediaQuery * 1.0937);
+
+		@media screen and (min-width: $minWidthMediaQuery) {
+			box-shadow: $classAtributeValue1 $classAtributeValue2 $classAtributeValue3,
+				$classAtributeValue4 rgb(00, 00, 00, 0.06) !important;
+		}
+	}
+}
+
+/*----------TRANSFORM-SCALE----------*/
+@mixin scaleTransformScale($classAtributeValue, $minWidthMediaQuery) {
+	transform: scale($classAtributeValue);
+
+	$i: $minWidthMediaQuery -128px;
+	@while ($minWidthMediaQuery < 12000px) {
+		$i: $i + 128px;
+		$classAtributeValue: calc($classAtributeValue * 1.0937);
+		$minWidthMediaQuery: calc($minWidthMediaQuery * 1.0937);
+
+		@media screen and (min-width: $minWidthMediaQuery) {
+			transform: scale($classAtributeValue) !important;
+		}
+	}
+}
+
+/*----------BACKGROUND-SIZE----------*/
+@mixin scaleBackgroundSize($classAtributeValue, $minWidthMediaQuery) {
+	background-size: $classAtributeValue;
+
+	$i: $minWidthMediaQuery -128px;
+	@while ($minWidthMediaQuery < 12000px) {
+		$i: $i + 128px;
+		$classAtributeValue: calc($classAtributeValue * 1.0937);
+		$minWidthMediaQuery: calc($minWidthMediaQuery * 1.0937);
+
+		@media screen and (min-width: $minWidthMediaQuery) {
+			background-size: $classAtributeValue !important;
+		}
+	}
+}
